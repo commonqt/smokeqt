@@ -30,6 +30,8 @@
 
         <signature>^bool qt_sendSpontaneousEvent\(.*\)$</signature>
         <signature>^void qt_format_text\(.*\)$</signature>
+		
+		<signature>^QDataStream.*&amp;.*operator(&lt;&lt;|&gt;&gt;)(.*QDataStream.*&amp;.*)</signature>
 
         <!-- these next four functions are delcaraed as friend functions, but
              are not exposed externally -->
@@ -255,6 +257,8 @@
         <class>QWidgetItem</class>
         <class>QWizard</class>
         <class>QWizardPage</class>
+		
+		<class>QApplication</class>
     </classList>
 </config>
 
