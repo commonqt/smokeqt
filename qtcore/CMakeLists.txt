@@ -1,10 +1,12 @@
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 
+set(SMOKE_PARTS 20)
+
 create_configure_files("${Qt5Core_INCLUDE_DIRS}")
 get_smokegen_args(smokegenArgs qtcore)
-run_smokegen(20 "${smokegenArgs}")
-get_smokegen_output_files(smokeqtcore_LIB_SRCS 20)
+run_smokegen(${SMOKE_PARTS} "${smokegenArgs}")
+get_smokegen_output_files(smokeqtcore_LIB_SRCS ${SMOKE_PARTS})
 
 IF(CMAKE_CXX_FLAGS MATCHES "-fvisibility")
     ADD_DEFINITIONS(-DGCC_VISIBILITY)

@@ -1,6 +1,10 @@
 cmake_minimum_required(VERSION 2.8.11)
 project(SMOKEQT5)
-set(CMAKE_CXX_STANDARD 14)
+#set(CMAKE_CXX_STANDARD 14)
+
+if(NOT SMOKE_PARTS)
+    set(SMOKE_PARTS 20)
+endif()
 
 function(get_smokegen_args RESULT_NAME moduleName)
     set(clangOptions "-clangOptions")
@@ -21,6 +25,7 @@ function(get_smokegen_args RESULT_NAME moduleName)
     endif()
 
     set(smokegenArgs
+        -p ${SMOKE_PARTS}
         -config "${CMAKE_CURRENT_BINARY_DIR}/config.xml"
         -smokeconfig "${CMAKE_CURRENT_SOURCE_DIR}/smokeconfig.xml"
         -L "${CMAKE_BINARY_DIR}"
