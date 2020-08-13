@@ -39,7 +39,7 @@
 
         <signature>.*HDC.*\* qt_win_display_dc\(\)$</signature>
 		
-		<signature>^QDataStream.*&amp;.*operator(&lt;&lt;|&gt;&gt;)(.*QDataStream.*&amp;.*)</signature>
+	<signature>^(::)?QDataStream.*&amp;.*operator(&lt;&lt;|&gt;&gt;)\(.*QDataStream.*&amp;.*\)</signature>
 
         <!-- Ignore Mac types -->
         <signature>.*operator&lt;&lt;\(.*const objc_object\*\)$</signature>
