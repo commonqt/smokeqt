@@ -24,14 +24,17 @@
         <signature>.*::d_ptr.*</signature>
         <signature>.*::q_ptr.*</signature>
         <signature>.*\(.*Private.*\).*</signature>
-        <signature>.*QScopedPointer&lt;QHostAddressPrivate.*</signature>
-        <signature>.*QExplicitlySharedDataPointer&lt;QHostAddressPrivate&gt;.*</signature>
+        <signature>.*QScopedPointer&lt;(::)?QHostAddressPrivate.*</signature>
+        <signature>.*QExplicitlySharedDataPointer&lt;(::)?QHostAddressPrivate&gt;.*</signature>
 
         <signature>.*QSslConfiguration::ALPNProtocolHTTP2.*</signature>
         <signature>.*QSslConfiguration::NextProtocolSpdy3_0.*</signature>
         <signature>.*QSslConfiguration::NextProtocolHttp1_1.*</signature>
 
         <signature>^bool qt_sendSpontaneousEvent\(.*\)$</signature>
+
+		<signature>^(::)?QDataStream.*&amp;.*operator(&lt;&lt;|&gt;&gt;)\(.*QDataStream.*&amp;.*\)</signature>
+		<signature>^(::)?QDebug.*operator(&lt;&lt;|&gt;&gt;)\(.*QDebug.*\)</signature>
 
         <!-- Ignore Mac types -->
         <signature>.*operator&lt;&lt;\(.*const objc_object\*\)$</signature>
@@ -83,7 +86,7 @@
         <class>QSslCipher</class>
         <class>QSslConfiguration</class>
         <class>QSslDiffieHellmanParameters</class>
-        <class>QSslEllipticCurve</class>
+        <!--<class>QSslEllipticCurve</class>-->  <!--Because QT was not configured with openssl....-->
         <class>QSslError</class>
         <class>QSslKey</class>
         <class>QSslPreSharedKeyAuthenticator</class>

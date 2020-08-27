@@ -291,6 +291,8 @@
 		
 		<class>QCborSimpleType</class>
 
+		<class>SCQMetaObjectBuilder</class>
+
         <!-- namespaces -->
         <class>Qt</class>
     </classList>

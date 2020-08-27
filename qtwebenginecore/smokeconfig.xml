@@ -17,11 +17,18 @@
         <typeName>QString</typeName>
     </voidpTypes>
     <classList>
-        <class>QWebEngineCookieStore</class>
-        <class>QWebEngineHttpRequest</class>
-        <class>QWebEngineUrlRequestInfo</class>
-        <class>QWebEngineUrlRequestInterceptor</class>
-        <class>QWebEngineUrlRequestJob</class>
-        <class>QWebEngineUrlSchemeHandler</class>
+	<class>QWebEngineClientCertificateStore</class>
+	<class>QWebEngineCookieStore</class>
+	<class>QWebEngineCookieStore::FilterRequest</class>
+	<class>QWebEngineFindTextResult</class>
+	<class>QWebEngineHttpRequest</class>
+	<class>QWebEngineNotification</class>
+	<class>QWebEngineQuotaRequest</class>
+	<class>QWebEngineRegisterProtocolHandlerRequest</class>
+	<class>QWebEngineUrlRequestInfo</class>
+	<class>QWebEngineUrlRequestInterceptor</class>
+	<class>QWebEngineUrlRequestJob</class>
+	<class>QWebEngineUrlScheme</class>
+	<class>QWebEngineUrlSchemeHandler</class>
     </classList>
 </config>

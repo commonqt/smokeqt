@@ -22,6 +22,7 @@
     </exclude>
     <classList>
         <class>QWebEngineCertificateError</class>
+        <class>QWebEngineClientCertificateSelection</class>
         <class>QWebEngineContextMenuData</class>
         <class>QWebEngineDownloadItem</class>
         <class>QWebEngineFullScreenRequest</class>
