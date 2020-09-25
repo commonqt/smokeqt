@@ -6,6 +6,7 @@
         <module>qtquick</module>
         <module>qtnetwork</module>
         <module>qtwebenginecore</module>
+        <module>qtwebchannel</module>
     </parentModules>
     <parts>1</parts>
     <scalarTypes>
@@ -18,7 +19,7 @@
         <typeName>QString</typeName>
     </voidpTypes>
     <exclude>
-        <signature>.*QWebEngineCallback.*</signature>
+        <!--  <signature>.*QWebEngineCallback.*</signature> -->
     </exclude>
     <classList>
         <class>QWebEngineCertificateError</class>

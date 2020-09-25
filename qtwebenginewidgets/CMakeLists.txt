@@ -16,6 +16,7 @@ target_link_libraries(smokeqtwebenginewidgets
     smokeqtgui 
     smokeqtquick
     smokeqtnetwork
+    smokeqtwebchannel
     smokeqtwebenginecore
     Qt5::WebEngineWidgets
 )
